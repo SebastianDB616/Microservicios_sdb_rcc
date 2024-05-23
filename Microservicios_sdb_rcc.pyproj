@@ -21,7 +21,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src\auth\server.py" />
     <Compile Include="Microservicios_sdb_rcc.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\auth\" />
+    <Folder Include="src\" />
+    <Folder Include="src\auth\manifests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\auth\Dockerfile" />
+    <Content Include="src\auth\init.sql" />
+    <Content Include="src\auth\manifests\auth-deploy.yaml" />
+    <Content Include="src\auth\manifests\configmap.yaml" />
+    <Content Include="src\auth\manifests\secret.yaml" />
+    <Content Include="src\auth\manifests\service.yaml" />
+    <Content Include="src\auth\requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
