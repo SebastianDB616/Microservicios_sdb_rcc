@@ -23,11 +23,23 @@
   <ItemGroup>
     <Compile Include="src\auth\server.py" />
     <Compile Include="Microservicios_sdb_rcc.py" />
+    <Compile Include="src\gateway\auth\validate.py" />
+    <Compile Include="src\gateway\auth\__init__.py" />
+    <Compile Include="src\gateway\auth_svc\access.py" />
+    <Compile Include="src\gateway\auth_svc\__init__.py" />
+    <Compile Include="src\gateway\server.py" />
+    <Compile Include="src\gateway\storage\util.py" />
+    <Compile Include="src\gateway\storage\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\auth\" />
     <Folder Include="src\" />
     <Folder Include="src\auth\manifests\" />
+    <Folder Include="src\gateway\" />
+    <Folder Include="src\gateway\auth\" />
+    <Folder Include="src\gateway\auth_svc\" />
+    <Folder Include="src\gateway\manifests\" />
+    <Folder Include="src\gateway\storage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\auth\Dockerfile" />
@@ -37,6 +49,13 @@
     <Content Include="src\auth\manifests\secret.yaml" />
     <Content Include="src\auth\manifests\service.yaml" />
     <Content Include="src\auth\requirements.txt" />
+    <Content Include="src\gateway\Dockerfile" />
+    <Content Include="src\gateway\manifests\configmap.yaml" />
+    <Content Include="src\gateway\manifests\gateway-deploy.yaml" />
+    <Content Include="src\gateway\manifests\ingress.yaml" />
+    <Content Include="src\gateway\manifests\secret.yaml" />
+    <Content Include="src\gateway\manifests\service.yaml" />
+    <Content Include="src\gateway\requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
