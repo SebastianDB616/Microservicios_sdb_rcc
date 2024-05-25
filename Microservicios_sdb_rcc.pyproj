@@ -32,6 +32,9 @@
     <Compile Include="src\gateway\server.py" />
     <Compile Include="src\gateway\storage\util.py" />
     <Compile Include="src\gateway\storage\__init__.py" />
+    <Compile Include="src\notification\consumer.py" />
+    <Compile Include="src\notification\send\email.py" />
+    <Compile Include="src\notification\send\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\auth\" />
@@ -45,6 +48,9 @@
     <Folder Include="src\gateway\manifests\" />
     <Folder Include="src\gateway\storage\" />
     <Folder Include="src\converter\" />
+    <Folder Include="src\notification\" />
+    <Folder Include="src\notification\manifests\" />
+    <Folder Include="src\notification\send\" />
     <Folder Include="src\rabbit\" />
     <Folder Include="src\rabbit\manifests\" />
   </ItemGroup>
@@ -66,6 +72,11 @@
     <Content Include="src\gateway\manifests\secret.yaml" />
     <Content Include="src\gateway\manifests\service.yaml" />
     <Content Include="src\gateway\requirements.txt" />
+    <Content Include="src\notification\Dockerfile" />
+    <Content Include="src\notification\manifests\configmap.yaml" />
+    <Content Include="src\notification\manifests\notification-deploy.yaml" />
+    <Content Include="src\notification\manifests\secret.yaml" />
+    <Content Include="src\notification\requirements.txt" />
     <Content Include="src\rabbit\manifests\configmap.yaml" />
     <Content Include="src\rabbit\manifests\ingress.yaml" />
     <Content Include="src\rabbit\manifests\pvc.yaml" />
